@@ -4,7 +4,7 @@
 {
     margin: 0;
     padding: 0;
-
+    
     font-family: 'Poppins', sans-serif;
 }
 
@@ -13,6 +13,22 @@ body
     background: #2c0c4a;
     min-height:3000px;
 }
+
+/* ------navbar section---------- */
+
+.navbar
+{
+    position: absolute;
+    height: 50px;
+    background: #24093d;
+    width: 100%;
+    z-index: 3;
+    display: inline-block;
+    border: black;
+}
+
+
+/* -----parallax section------- */
 
 .parallax
 {
@@ -92,17 +108,20 @@ body
 .social>li
 {
     display: inline;
-    
+    width: 80px;
 }
 
 .social>li>a
 {
     text-decoration: none;
+    width: 80px;
 }
 
 .social>li>a>svg
 {
     filter: drop-shadow(-3px 3px 3px black);
+    width: 64px;
+    height: 64px;
 }
 
 .social>li>a>svg:hover
@@ -115,16 +134,6 @@ body
 }
 
 
-.navbar
-{
-    position: absolute;
-    height: 50px;
-    background: #24093d;
-    width: 100%;
-    z-index: 3;
-    display: inline-block;
-    border: black;
-}
 
 
 /* --------about me section--------- */
@@ -170,6 +179,86 @@ body
 }
 
 
+/* -------looking for section--------- */
+.lookingfor
+{   
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #24093d;
+    
+    
+}
+
+.lookingfor>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+    
+}
+
+.lookingfor::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #24093d43;
+    top: 0;
+    z-index: 1;
+}
+
+.lookingforcard
+{
+    position: relative;
+    background: linear-gradient(30deg, #2b105d, #581358);
+    max-width: 800px;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 80px auto;
+    box-shadow: 0 0 10px #00ddff;
+    z-index: 200;
+    color: white;
+    padding: 20px;
+}
+
+.lookingfor p
+{
+    margin-bottom: 60px;
+}
+
+.lookingfor h2
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#bottomcurve
+{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+}
+
+#topcurve
+{
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+}
+
+
+
 /* --------card section--------- */
 
 .card-section
@@ -201,7 +290,6 @@ body
  
 .card-image 
 {
-    background-color: #c1c1c100;
     height: 120px;
     border-radius: 20px 20px 0 0;
     margin-bottom: 15px;
@@ -212,23 +300,35 @@ body
  
 .im_1 
 {
-    background-image: url('images/imgcard1.png');
+    background-image: url('images/vscodess.png');
 }
 
 .im_2 
 {
-    background-image: url('images/imgcard1.png');
+    background-image: url('images/resumess.png');
 }
 .im_3 
 {
-    background-image: url('images/imgcard1.png');
+    background-image: url('images/phialpha.png');
 }
 
 .im_4 
 {
-    background-image: url('images/imgcard1.png');
+    background-image: url('images/mathnasiumss.png');
+    background-size: contain;
+}
+
+.im_5
+{
+    background-image: url('images/flinthills.png');
+    background-size: contain;
 }
  
+.im_6
+{
+    background-image: url('images/portfolioss.png');
+}
+
 .card h2 
 {
     padding: 15px;
@@ -242,74 +342,31 @@ body
 }
  
 
-/* -------looking for section--------- */
-.lookingfor
-{   
-    position: relative;
-    border: 0;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    background-color: #24093d;
-    
-    
-}
+/* ------footer section------ */
 
-.lookingfor>img
-{
-    position: absolute;
-    width: 100%;
-    background-size: cover;
-    -webkit-filter: grayscale(20%);
-    filter: grayscale(20%);
-    
-}
-
-.lookingfor::before
-{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #24093d43;
-    top: 0;
-    z-index: 1;
-}
-
-.lookingforcard
+.footer
 {
     position: relative;
-    background: linear-gradient(30deg, #2b105d, #581358);
-    max-width: 800px;
-    height: 400px;
-    border-radius: 20px;
-    margin: 80px auto;
-    box-shadow: 0 0 10px #00ddff;
-    z-index: 200;
-    color: white;
-    padding: 20px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24, 3, 31);
+    
 }
 
-.lookingfor h2
+#topfootercurve
 {
-    text-align: center;
-    padding-bottom: 30px;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
 }
 
-#bottomcurve
+.footer>p
 {
+    right: 0;
+    left: 0;
     position: absolute;
     bottom: 0;
-    height: 100px;
-    width: 100%;
-    z-index: 2;
-}
-
-#topcurve
-{
-    position: absolute;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    z-index: 2;
+    text-align: center;
 }
