@@ -245,6 +245,7 @@ body
     height: 100px;
     width: 100%;
     z-index: 2;
+    filter: drop-shadow(0 -2px 3px black);
 }
 
 #topcurve
@@ -254,6 +255,7 @@ body
     height: 60px;
     width: 100%;
     z-index: 2;
+    filter: drop-shadow(0 2px 3px black);
 }
 
 
