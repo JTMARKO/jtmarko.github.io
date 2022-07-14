@@ -330,6 +330,12 @@ body
     background-image: url('images/portfolioss.png');
 }
 
+.im_7
+{
+  background-image: url('images/loboswebsite.png');
+  background-size: contain;
+}
+
 .card h2 
 {
     padding: 15px;
