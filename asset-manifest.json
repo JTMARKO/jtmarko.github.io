@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0c62a94b.css",
+    "main.js": "/static/js/main.0bcc1d2a.js",
+    "static/media/portfolioss.png": "/static/media/portfolioss.4d7d8d83bfa7bb3e4900.png",
+    "static/media/loboswebsite.png": "/static/media/loboswebsite.d01c89c1135f4f810b82.png",
+    "static/media/mathnasiumss.png": "/static/media/mathnasiumss.bda5e44918eaa73df133.png",
+    "static/media/resumess.png": "/static/media/resumess.34d3cefd37ed2a1c9e7e.png",
+    "static/media/flinthills.png": "/static/media/flinthills.886cc23cb33319340563.png",
+    "static/media/snakegame.jpg": "/static/media/snakegame.1efe7ec6ef97b7ce4efb.jpg",
+    "static/media/vscodess.png": "/static/media/vscodess.0c31065d39801a108ebe.png",
+    "static/media/phialpha.png": "/static/media/phialpha.7546621771495352fb98.png",
+    "index.html": "/index.html",
+    "main.0c62a94b.css.map": "/static/css/main.0c62a94b.css.map",
+    "main.0bcc1d2a.js.map": "/static/js/main.0bcc1d2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c62a94b.css",
+    "static/js/main.0bcc1d2a.js"
+  ]
+}
