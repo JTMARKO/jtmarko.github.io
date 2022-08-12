@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: #2c0c4a;
+}
+
+/* ------navbar section---------- */
+
+.navbar
+{
+    position: absolute;
+    height: 50px;
+    background: #24093d;
+    width: 100%;
+    z-index: 3;
+    display: inline-block;
+    border: black;
+}
+
+
+/* -----parallax section------- */
+
+.parallax
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .parallax:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, #24093d, transparent);
+    z-index: 1;
+} */
+
+.parallax>img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text
+{
+    position: relative;
+    color: white;
+    font-size: 7em;
+    z-index: 1;
+    top: -80px;
+    text-align: center;
+    text-shadow: -3px 3px 3px black;
+
+}
+
+#text>:first-child::after
+{
+    position: relative;
+    content: '';
+    
+    
+    width: 650px;
+    height: 5px;
+    top: -10px;
+    margin: auto;
+    background-color: white;
+    z-index: 10000;
+    display: block;
+    box-shadow: -3px 3px 3px black;
+}
+
+.bottomheader
+{
+    font-size: 30px;
+}
+
+/* --------social---------- */
+
+.social
+{
+    position: relative;
+    top: -30px;
+    list-style: none;
+}
+
+.social>li
+{
+    display: inline;
+    width: 80px;
+}
+
+.social>li>a
+{
+    text-decoration: none;
+    width: 80px;
+}
+
+.social>li>a>svg
+{
+    filter: drop-shadow(-3px 3px 3px black);
+    width: 64px;
+    height: 64px;
+}
+
+.social>li>a>svg:hover
+{
+    cursor: pointer;
+}
+.social>li>a>svg:hover path
+{
+    fill: #aeaeae;
+}
+
+
+
+
+/* --------about me section--------- */
+
+.aboutme
+{
+    position: relative;
+    margin: 50px auto;
+    max-width: 700px;
+    height: 400px;
+    background: linear-gradient(30deg, #2b105d, #581358);
+    
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00ddff;
+    color: white;
+}
+
+.aboutme h2
+{   
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+
+
+.aboutme img
+{
+    position: absolute;
+    border-radius: 50px;
+    left: 50px;
+    top: 80px;
+    height: 180px;
+}
+
+.aboutme p
+{
+    position: relative;
+    margin-left: 200px;
+    top: 80px;
+    padding-right: 50px;
+    max-width: 600px;
+}
+
+
+/* -------looking for section--------- */
+.lookingfor
+{   
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #24093d;
+    
+    
+}
+
+.lookingfor>img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+    
+}
+
+.lookingfor::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #24093d43;
+    top: 0;
+    z-index: 1;
+}
+
+.lookingforcard
+{
+    position: relative;
+    background: linear-gradient(30deg, #2b105d, #581358);
+    max-width: 800px;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 80px auto;
+    box-shadow: 0 0 10px #00ddff;
+    z-index: 200;
+    color: white;
+    padding: 20px;
+}
+
+.lookingfor p
+{
+    margin-bottom: 60px;
+}
+
+.lookingfor h2
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#bottomcurve
+{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+    filter: drop-shadow(0 -2px 3px black);
+}
+
+#topcurve
+{
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+    filter: drop-shadow(0 2px 3px black);
+}
+
+
+
+/* --------card section--------- */
+
+.card-section
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+ 
+.card 
+{
+    background: #2b105d;
+    background: linear-gradient(30deg, #2b105d, #581358);
+    width: 260px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px #00ddff;
+}
+ 
+.card-image 
+{
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: 0 40%;
+ 
+}
+ 
+.im_1 
+{
+    background-image: url('images/vscodess.png');
+}
+
+.im_2 
+{
+    background-image: url('images/resumess.png');
+}
+.im_3 
+{
+    background-image: url('images/phialpha.png');
+}
+
+.im_4 
+{
+    background-image: url('images/mathnasiumss.png');
+    background-size: contain;
+}
+
+.im_5
+{
+    background-image: url('images/flinthills.png');
+    background-size: contain;
+}
+ 
+.im_6
+{
+    background-image: url('images/portfolioss.png');
+}
+
+.im_7
+{
+  background-image: url('images/loboswebsite.png');
+  background-size: contain;
+}
+
+.card h2 
+{
+    padding: 15px;
+    color: white;
+}
+ 
+.card p 
+{
+    padding: 15px;
+    color: white;
+}
+ 
+
+/* ------footer section------ */
+
+.footer
+{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24, 3, 31);
+    
+}
+
+#topfootercurve
+{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+}
+
+.footer>p
+{
+    right: 0;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
