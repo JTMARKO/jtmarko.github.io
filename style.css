@@ -336,6 +336,26 @@ body
   background-size: contain;
 }
 
+.im_8
+{
+    background-image: url('images/hologram.png');
+}
+
+.im_9
+{
+    background-image: url('images/video_game.png');
+}
+
+.im_10
+{
+    background-image: url('images/asteroids.png');
+}
+
+.im_11
+{
+    background-image: url('images/aws.png');
+}
+
 .card h2 
 {
     padding: 15px;
